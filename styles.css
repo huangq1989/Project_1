@@ -8,14 +8,14 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
+  color: #001351;
   background: #f7f5f0;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #D6F2FF;
 }
 a:hover {
   color: #6633ff;
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #001351;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -51,13 +51,13 @@ a:hover {
 .nav a {
   transition: all .5s;
 }
-.nav a:hover {
-  color: white
+.nav a:hover, .nav a.selected {
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/greece.JPG') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -78,16 +78,17 @@ header .profile-image:hover {
 }
 .tag {
   background-color: #efefef;
-  color: black;
+  color: #001351;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #000F42;
+  color: white;
 }
+/*Containter for Home Page*/
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -99,9 +100,22 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #49BCED;
 }
-
+/*Containter for About Page*/
+.card2 {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card2:hover {
+  border-color: #49BCED;
+}
 ul.skills {
   padding: 0;
   text-align: center;
