@@ -18,7 +18,7 @@ a {
   color: #D6F2FF;
 }
 a:hover {
-  color: #6633ff;
+  font-weight: bold;
 }
 
 /* Section Styles */
@@ -88,11 +88,11 @@ header .profile-image:hover {
   background-color: #000F42;
   color: white;
 }
-/*Containter for Home Page*/
+/************Containter for Home & About Page*********/
 .card {
-  margin: 30px;
+  margin: 15px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width:100%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -102,20 +102,7 @@ header .profile-image:hover {
 .card:hover {
   border-color: #49BCED;
 }
-/*Containter for About Page*/
-.card2 {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 100%;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card2:hover {
-  border-color: #49BCED;
-}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -181,6 +168,65 @@ a.social:hover {
   clear: both;
 }
 
+/************Contact Container*********/
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact a {
+  display: block;
+  min-height: 22px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding:0 0 0 25px;
+  margin:0 0 8px 0;
+  color: #001351;
+  
+}
+.contact li.phone a {
+  background-image: url('images/contact/phone.png');
+}
+
+.contact li.mail a {
+  background-image: url('images/contact/mail.png');
+}
+
+.contact li.twitter a {
+  background-image: url('images/contact/twitter.png');
+}
+
+a.contact-icon {
+  opacity: 0.6;
+  
+}
+
+a.contact-icon:hover {
+  opacity: 1;
+  background-size: 22px 22px;
+  
+}
+
+/********gallery page*****/
+img {
+  max-width: 100%;
+}
+
+#gallery {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery li {
+
+  display: inline-block;
+  background: orange;
+  width: 45%;
+  margin: 2.5%;
+  padding: 0%;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -216,6 +262,9 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
+  
+  card2 {
+    width: 50%;
+  }
 }
 
